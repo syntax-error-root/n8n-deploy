@@ -1,0 +1,20 @@
+# Secrets — never commit real values
+*.env
+!salt/files/env.jinja
+/srv/pillar/n8n.sls
+
+# OS / editor junk
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Salt cache/pki (runtime only)
+/srv/salt/pki/
+*.pyc
+__pycache__/
+
+# Claude local settings
+.claude/
